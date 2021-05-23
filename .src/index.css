@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Orelega+One&display=swap");
 body {
-  background: #333;
+  background: blue;
   color: white;
 }
 
@@ -227,13 +227,8 @@ body {
 #Chat #ChatWindow .chat-messages .chat-message {
   margin-bottom: 0.3em;
   background: #51ff005c;
-  padding: 0 10px 1px 20px;
+  padding: 0 10px;
   width: 95%;
-}
-#Chat #ChatWindow .chat-messages .chat-message .message-emitter {
-  padding: 2px 0;
-  font-size: 1.1em;
-  margin-left: -5px;
 }
 #Chat #ChatWindow .chat-messages .chat-message[class$=local] {
   text-align: right;
@@ -245,7 +240,7 @@ body {
   background: #39ffc842;
 }
 #Chat #ChatWindow .chat-messages .chat-message.only-remote, #Chat #ChatWindow .chat-messages .chat-message.only-local {
-  padding: 10px 10px 10px 20px;
+  padding: 10px;
   border-radius: 10px;
 }
 #Chat #ChatWindow .chat-messages .chat-message.first-local, #Chat #ChatWindow .chat-messages .chat-message.first-remote {
@@ -263,32 +258,14 @@ body {
 #Chat #ChatWindow .chat-messages .chat-message.local, #Chat #ChatWindow .chat-messages .chat-message.remote {
   margin: 0;
 }
-#Chat #ChatWindow .chat-messages .chat-message.system-message {
-  width: 100%;
-  padding: 10px 10px 10px 20px;
-  background: #ffff6b;
-  color: black;
-  font-weight: bold;
-  clear: both;
-}
-#Chat #ChatWindow .is-typing {
-  text-align: left;
-  padding: 5px;
-  margin-left: 20px;
-  font-size: 1.1em;
-  color: white;
-  text-shadow: 0 0 5px #ffffffaa;
-  clear: both;
+#Chat #ChatWindow .chat-commands {
+  display: flex;
 }
 #Chat #ChatWindow .chat-commands input {
-  width: 100%;
-  float: left;
+  flex-grow: 10;
 }
 #Chat #ChatWindow .chat-commands button {
   color: #4db6ac;
-  position: absolute;
-  right: 0;
-  margin-top: 4px;
 }
 #Chat #ChatWindow .chat-commands button:not(:disabled):hover, #Chat #ChatWindow .chat-commands button:not(:disabled):active, #Chat #ChatWindow .chat-commands button:not(:disabled):focus {
   color: #abe6e1;
