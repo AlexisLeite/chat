@@ -1,7 +1,7 @@
 import { ServerCommunications } from "services/serverComunication";
 
 export function api(route) {
-  return `${env("gameApi")}/${route}`;
+  return `${env("api")}/${route}`;
 }
 
 export function asDebugable(thisObject) {
